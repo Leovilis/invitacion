@@ -20,7 +20,7 @@ body {
   
 }
 .perfil .header { 
-  width: 400px;
+  width: 450px;
   height: 100vh;
   max-height: 100vh;
   background: url('../images/fondo.jpg' ) no-repeat center;
@@ -42,8 +42,8 @@ body {
 }
 
 .perfil .header .descripcion {
-  width: 80%;
-  margin-left: 35px;
+  width: 90%;
+  margin-left: 18px;
   text-align: center;
   font-size: 23px;
   font-weight: 600;
@@ -56,12 +56,13 @@ body {
   color: #d69e7d;
   font-weight: 600;
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 1px;
+  margin-left: 250px;
 }
 
 .perfil .header .elementos {
   margin-left: 55px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 80%;
   color: #d69e7d;
   font-family: 'Shadoe Into Light', cursive;
