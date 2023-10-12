@@ -23,7 +23,7 @@ body {
   width: 400px;
   height: 100vh;
   max-height: 100vh;
-  background: url('images/fondo.jpg' ) no-repeat center;
+  background: url('../images/fondo.jpg' ) no-repeat center;
   background-size: contain;
   padding: 40px 40px 60px;
   border-top-left-radius: 8px;
