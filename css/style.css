@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&family=Shadows+Into+Light&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,25 +17,23 @@ body {
 .perfil {
   width: 350px;
   text-align: center;
-  
 }
-.perfil .header { 
+.perfil .header {
   width: 450px;
   height: 100vh;
   max-height: 100vh;
-  background: url('../images/fondo.jpg' ) no-repeat center;
+  background: url("../images/fondo.jpg") no-repeat center;
   background-size: contain;
   padding: 40px 40px 60px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
-
 .perfil .header .nombre {
   color: #d69e7d;
   font-size: 28px;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 25px;
@@ -47,17 +45,25 @@ body {
   text-align: center;
   font-size: 23px;
   font-weight: 600;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   color: #d69e7d;
 }
 
-.perfil .header .autor{
-  font-family: 'Shadows Into Light', cursive;
+.perfil .header .autor {
+  font-family: "Shadows Into Light", cursive;
   color: #d69e7d;
   font-weight: 600;
   font-size: 20px;
   margin-top: 1px;
-  margin-left: 250px;
+  margin-left: 220px;
+}
+
+.perfil .header a {
+  color: #d69e7d;
+  font-family: "Shadows Into Light", cursive;
+  color: #d69e7d;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .perfil .header .elementos {
@@ -65,21 +71,66 @@ body {
   margin-top: 10px;
   width: 80%;
   color: #d69e7d;
-  font-family: 'Shadoe Into Light', cursive;
+  font-family: "Shadoe Into Light", cursive;
   font-size: 20px;
   font-weight: bolder;
   /* display: flex;
   justify-content: space-around; */
 }
+.parpadea {
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
 
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* -----HOVER----- */
 
-
-#confirmButton, #createUser {
+#confirmButton,
+#createUser {
   padding: 12px 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #d69e7d;
   border: 2px solid #d69e7d;
@@ -88,26 +139,26 @@ body {
   transition: 0.3s linear;
 }
 
-#confirmButton:hover, #createUser:hover {
+#confirmButton:hover,
+#createUser:hover {
   background: #d69e7d;
   color: #ffff;
 }
 
-#username{
-  background-color: #ffff ;
+#username {
+  background-color: #ffffff00;
+
   margin-top: 120px;
   margin-left: 25px;
   width: 300px;
   color: #d69e7d;
   text-transform: uppercase;
   border: none;
-  border-bottom: 2px solid #d69e7d;
-  font-size: 16px ;
-  font-family: 'Poppins', sans-serif;
-  
+  /* border-bottom: 2px solid #d69e7d; */
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
-
-
-
-
+#username::placeholder {
+  color: #d69e7d;
+}
