@@ -77,6 +77,11 @@ body {
   /* display: flex;
   justify-content: space-around; */
 }
+
+.parpadea a{
+  text-decoration: none;
+}
+
 .parpadea {
   animation-name: parpadeo;
   animation-duration: 1s;
