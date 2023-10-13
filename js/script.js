@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     confirmButton.addEventListener('click', function() {
         console.log("CONFIRMA");
         localStorage.setItem('attendanceConfirmed', true);
-        invitationDiv.innerHTML = "<p>¡Gracias! Respondeme con un SI!</p>";
+        invitationDiv.innerHTML = "<p>¡Gracias! Respondeme con un SI! <br> a mi Whatsapp</p>";
 
         const name = usernameInput.value;
         if (name) {
