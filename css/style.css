@@ -59,7 +59,6 @@ body {
 }
 
 .perfil .header a {
-  color: #d69e7d;
   font-family: "Shadows Into Light", cursive;
   color: #d69e7d;
   font-weight: 600;
@@ -74,8 +73,7 @@ body {
   font-family: "Shadoe Into Light", cursive;
   font-size: 20px;
   font-weight: bolder;
-  /* display: flex;
-  justify-content: space-around; */
+
 }
 
 .parpadea a{
@@ -159,7 +157,6 @@ body {
   color: #d69e7d;
   text-transform: uppercase;
   border: none;
-  /* border-bottom: 2px solid #d69e7d; */
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }

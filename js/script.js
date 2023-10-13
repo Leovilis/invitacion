@@ -10,24 +10,29 @@ document.addEventListener('DOMContentLoaded', function() {
         invitationDiv.innerHTML = "<p>¡Gracias! Respondeme con un SI! <br> a mi Whatsapp</p>";
 
         const name = usernameInput.value;
+        console.log("nombre: "+name);
         if (name) {
             localStorage.setItem('attendanceConfirmed', true);
             localStorage.setItem('guestName', name);
             usernameInput.disabled = 'true';
             confirmButton.style.display = 'none';
+            invitationDiv.innerHTML = "<p>¡Gracias! Respondeme con un SI! <br> a mi Whatsapp</p>";
             nameContainer.style.display = 'block';
             nameContainer.innerHTML = `<p>${name}</p>`;
         }
+       
     });
 
     const attendanceConfirmed = localStorage.getItem('attendanceConfirmed');
     const guestName = localStorage.getItem('guestName');
-
+    console.log("guestname: "+guestName);
     if (attendanceConfirmed && guestName) {
         usernameInput.disabled = 'true';
         confirmButton.style.display = 'none';
+        invitationDiv.innerHTML = "<p>¡Gracias! Respondeme con un SI! <br> a mi Whatsapp</p>";
         nameContainer.style.display = 'block';
-        nameContainer.innerHTML = `<p>${guestName}</p>`;
+        usernameInput.value = guestname;
+        // nameContainer.innerHTML = `<p>${guestName}</p>`;
         console.log(guestName);
     }
 
